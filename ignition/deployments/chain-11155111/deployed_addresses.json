@@ -1,0 +1,7 @@
+{
+  "StakingTokenModule#StakingToken": "0x00f46bfF7bd53F89e7e9D473408CFB3020bd41a3",
+  "StakingModule#Staking": "0xc3928A267b411Df684960ED6C5f62dB0bBDfC3fd",
+  "SetupStakingRewardsModule#Staking": "0xc3928A267b411Df684960ED6C5f62dB0bBDfC3fd",
+  "GovernanceModule#Governance": "0xff1ebdAb6efD56430d3BC3b7Eebc6A60fFF85209",
+  "RedeployGovernanceModule#Governance": "0xF8Fc5CD435e46F7Db1749ac30Bfa04Dac6aFF52e"
+}
