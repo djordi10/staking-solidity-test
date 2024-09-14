@@ -86,6 +86,13 @@ To set up and run the frontend:
 
 5. Open [http://localhost:3000] in your browser to view the application.
 
+### Testing
+
+You can test the deployed version of the frontend at:
+[https://staking-frontend-ztjf.vercel.app/]
+
+This testing link provides access to the latest deployed version of the frontend, allowing you to interact with the staking and governance features without setting up the local environment.
+
 ## Development
 
 - Smart Contracts: Developed using Solidity 0.8.24

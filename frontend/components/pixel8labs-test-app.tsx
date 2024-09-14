@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any, react-hooks/exhaustive-deps */
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -64,7 +65,7 @@ export function Pixel8LabsTestApp() {
       setAccount(address)
       initializeContracts()
     }
-  }, [address])
+  }, [address]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const initializeContracts = async () => {
     if (!address) return
@@ -128,7 +129,7 @@ export function Pixel8LabsTestApp() {
       const filter = governanceContract.filters.ProposalCreated()
       const events = await governanceContract.queryFilter(filter)
       const proposals: Proposal[] = await Promise.all(events.map(async (event) => {
-        // @ts-ignore
+        // @ts-expect-error - Ignoring type mismatch in event.args
         const [id, proposer, , , , voteStart, voteEnd, description] = event.args
         const proposal = await governanceContract.proposals(id)
         const state = await governanceContract.state(id)
